@@ -33,14 +33,14 @@ XCTAssertEqual(floor(speed.value*10)/10, 10.0)
 let converter = PaceConverter()
 
 let distanceList = [
-Measurement.init(value: 200, unit: UnitLength.meters),
-Measurement.init(value: 400, unit: UnitLength.meters),
-Measurement.init(value: 800, unit: UnitLength.meters),
-Measurement.init(value: 1, unit: UnitLength.kilometers),
-Measurement.init(value: 5, unit: UnitLength.kilometers),
-Measurement.init(value: 10, unit: UnitLength.kilometers),
-Measurement.init(value: 42.195/2, unit: UnitLength.kilometers),
-Measurement.init(value: 42.195, unit: UnitLength.kilometers)
+	Measurement.init(value: 200, unit: UnitLength.meters),
+	Measurement.init(value: 400, unit: UnitLength.meters),
+	Measurement.init(value: 800, unit: UnitLength.meters),
+	Measurement.init(value: 1, unit: UnitLength.kilometers),
+	Measurement.init(value: 5, unit: UnitLength.kilometers),
+	Measurement.init(value: 10, unit: UnitLength.kilometers),
+	Measurement.init(value: 42.195/2, unit: UnitLength.kilometers),
+	Measurement.init(value: 42.195, unit: UnitLength.kilometers)
 ]
 
 var speed = Measurement.init(value: 10, unit: UnitSpeed.kilometersPerHour)
@@ -56,12 +56,12 @@ XCTAssertEqual(timeList[distanceList[0]]?.second, 12)
 let converter = PaceConverter()
 
 let array = [
-DistanceInfo(name:"10.0 km/h",
-distance: Measurement.init(value: 1000, unit: UnitLength.meters),
-speed: Measurement.init(value: 10, unit: UnitSpeed.kilometersPerHour)),
-DistanceInfo(name:"10.9 km/h",
-distance: Measurement.init(value: 2000, unit: UnitLength.meters),
-speed: Measurement.init(value: 10.9, unit: UnitSpeed.kilometersPerHour))
+	DistanceInfo(name:"10.0 km/h",
+		distance: Measurement.init(value: 1000, unit: UnitLength.meters),
+		speed: Measurement.init(value: 10, unit: UnitSpeed.kilometersPerHour)),
+	DistanceInfo(name:"10.9 km/h",
+		distance: Measurement.init(value: 2000, unit: UnitLength.meters),
+		speed: Measurement.init(value: 10.9, unit: UnitSpeed.kilometersPerHour))
 ]
 
 var outputArray = converter.calcDistanceStruct(array)
