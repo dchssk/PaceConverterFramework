@@ -1,7 +1,25 @@
 PaceConverterFramework
 ====
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/dchssk/PaceConverterFramework)
 
 PaceConverterFramework is a simple framework for converting pace and speed.
+
+## Install
+### Carthage
+- Add it to your Cartfile:
+```
+github "dchssk/PaceConverterFramework"
+```
+- Run `carthage update --platform iOS`
+- Add 'PaceConverterFramework.framework' to 'Linked Frameworks and Library' on your project.
+- Add `/usr/local/bin/carthage copy-frameworks` to 'New Run Script Phase'.
+- Add `$(SRCROOT)/Carthage/Build/iOS/PaceConverterFramework.framework` to 'Input Files'.
+
+### import
+On your .swift file, import the module:
+```swift
+import PaceConverterFramework
+```
 
 ## Key features
 
