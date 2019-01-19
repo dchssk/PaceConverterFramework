@@ -1,0 +1,17 @@
+.DS_Store
+DerivedData
+xcuserdata
+*.tar.gz
+._*
+*.developerprofile
+*.orig
+*.rej
+*.swp
+docs/
+in_include/
+build/
+univ/
+version.c
+*.xccheckout
+*.xcscmblueprint
+*.xcuserstate
